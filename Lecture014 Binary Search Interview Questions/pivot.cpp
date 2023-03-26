@@ -14,13 +14,12 @@ int getPivot(int arr[], int n) {
             s = mid+1;
         }
         else{
-            e = mid;
+            e = mid; 
         }
         mid = s + (e-s)/2;
     }
-    return s;
+    return  e ;
 }
-
 int main() {
     int arr[5] = {1, 3, 8, 10, 17};
     cout << "Pivot is " << getPivot(arr, 5) << endl;
